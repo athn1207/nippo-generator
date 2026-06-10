@@ -3,8 +3,8 @@
 メンターへ毎日送るLINE日報を、フォームに入力するだけで自動生成するWebアプリです。
 
 ## スクリーンショット
+<img width="914" height="845" alt="screenshot" src="https://github.com/user-attachments/assets/0b80b9fe-2abb-4ed1-ba37-981bf904b1ee" />
 
-<!-- アプリのスクリーンショットをここに追加してください -->
 
 ## 機能
 
