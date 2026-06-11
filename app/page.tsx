@@ -58,7 +58,7 @@ export default function Home() {
     if (!noSales) {
       const validProducts = products.filter((p) => p.name || p.sales || p.profit);
       if (validProducts.length > 0) {
-        lines.push(`本日の売上　${validProducts.length}点`);
+        lines.push(`■本日の売上　${validProducts.length}点`);
         validProducts.forEach((p, i) => {
           lines.push(`${i + 1}．${p.name}　売上${formatNumber(p.sales)}円　利益${formatNumber(p.profit)}円`);
         });
@@ -68,10 +68,10 @@ export default function Home() {
       }
     }
 
-    if (didToday) { lines.push("今日したこと"); lines.push(didToday); lines.push(""); }
-    if (felt) { lines.push("感じたこと"); lines.push(felt); lines.push(""); }
-    if (todoTomorrow) { lines.push("明日のやること"); lines.push(todoTomorrow); lines.push(""); }
-    if (tomorrowPlan) { lines.push("明日どういう一日にするか"); lines.push(tomorrowPlan); }
+    if (didToday) { lines.push("■今日したこと"); lines.push(didToday); lines.push(""); }
+    if (felt) { lines.push("■感じたこと"); lines.push(felt); lines.push(""); }
+    if (todoTomorrow) { lines.push("■明日のやること"); lines.push(todoTomorrow); lines.push(""); }
+    if (tomorrowPlan) { lines.push("■明日どういう一日にするか"); lines.push(tomorrowPlan); }
 
     return lines.join("\n").trimEnd();
   };
